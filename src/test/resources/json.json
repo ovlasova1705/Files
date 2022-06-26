@@ -1,0 +1,14 @@
+{"questionnaire":
+            [
+ {
+  "gender": "female",
+  "age": 35,
+  "customer": true
+ } ,
+ {
+  "gender": "male",
+  "age": 40,
+  "customer": false
+ }
+            ]
+}
