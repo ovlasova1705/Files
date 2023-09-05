@@ -36,10 +36,10 @@ public class ZipTest {
                                 );
                     } else if (entry.getName().contains("xlsx")) {
                         XLS xls = new XLS(zipIS);
-                        assertThat(xls.excel.getSheetAt(0).getRow(2)
-                                .getCell(2).getStringCellValue()).contains("Dmitry");
                         assertThat(xls.excel.getSheetAt(0).getRow(1)
-                                .getCell(1).getStringCellValue()).contains("xlsx FILE");
+                                .getCell(1).getStringCellValue()).contains("Dmitry");
+                        assertThat(xls.excel.getSheetAt(0).getRow(0)
+                                .getCell(0).getStringCellValue()).contains("xlsx FILE");
 
                     }
                 }}}}}
